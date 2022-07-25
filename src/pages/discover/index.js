@@ -9,6 +9,7 @@ import {NavLink} from "react-router-dom"
 
 
 export default memo(function HYDiscover(props){
+  // 调用接口
   useEffect(()=>{
     request({
       url:'./banner'

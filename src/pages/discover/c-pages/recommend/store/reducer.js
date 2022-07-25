@@ -1,0 +1,14 @@
+import * as actionTypes from './constants'
+//默认值
+const defaultState  ={
+  topBanners:[]
+} 
+function reducer(state = defaultState,action){
+  switch(action.type){
+    case actionTypes.CHANGE_TOP_BANNERS:
+      return {...state, topBanners:[]}
+    default:
+      return state;
+  }
+}
+export default reducer 
