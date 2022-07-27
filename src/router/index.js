@@ -18,22 +18,22 @@ import HYAlbum from "../pages/discover/c-pages/album";
 //配置的路由
 const routes = [
   {
-    path:'/',
-    exact:true,
+    path: '/',
+    exact: true,
     //双圆括号 进行路由重定向
-    render:()=>(
-      <Redirect to='./discover'/>
+    render: () => (
+      <Redirect to='./discover' />
     )
   },
-   {
-    path:'/discover',
-    component:HYDiscover,
+  {
+    path: '/discover',
+    component: HYDiscover,
     routes: [
       {
         path: "/discover",
         exact: true,
         render: () => (
-          <Redirect to={"/discover/artist"}/>
+          <Redirect to={"/discover/recommend"} />
         )
       },
       {
@@ -66,15 +66,15 @@ const routes = [
       //   component: HYPlayer
       // }
     ]
-  },  
+  },
   {
-    path:'/mine',
-    component:HYMine
-  },  
+    path: '/mine',
+    component: HYMine
+  },
   {
-    path:'/friend',
-    component:HYFriend
+    path: '/friend',
+    component: HYFriend
   }
-  , 
+  ,
 ];
 export default routes;
