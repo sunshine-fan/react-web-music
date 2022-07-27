@@ -35,3 +35,7 @@ yarn add @ant-design/icons
 ## 使用路由占位 控制 子路由  传入函数组件（props）  结构    const {route} = props;    {renderRoutes(route.routes)}
 
 ## yarn add axios
+
+7.25  引入react 状态管理
+## yarn add redux   react-redux   react-thunk
+
